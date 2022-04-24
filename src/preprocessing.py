@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import pandas as pd
 import numpy as np
-from tqdm import tqdm
+import pandas as pd
 from loguru import logger
+from tqdm import tqdm
 
 from src.config import AGGREGATE_COLUMNS
 from src.paths import RAW_DATASET_PATH, FINAL_DATASET_PATH
@@ -54,7 +54,7 @@ def main():
     assert len(AGGREGATE_COLUMNS) >= 1
     result_df["Entity"] = result_df[AGGREGATE_COLUMNS[0]]
     for agg_column in AGGREGATE_COLUMNS[1:]:
-        result_df["Entity"] = result_df["Entity"] + " | " + result_df[agg_column]
+        result_df["Entity"] = result_df["Entity"] + " (" + result_df[agg_column] + ")"
     logger.info("Entity used : {}".format(AGGREGATE_COLUMNS))
 
     with open(FINAL_DATASET_PATH, "w+") as f:

@@ -1,1 +1,1 @@
-AGGREGATE_COLUMNS = ['MinorCategory', 'Code']
+AGGREGATE_COLUMNS = ["MinorCategory", "Code"]
