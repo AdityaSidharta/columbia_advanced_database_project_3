@@ -93,3 +93,13 @@ After that, we employ pruning stage where a candidate is pruned if any combinati
 Due to the vast amount of different complaints and the dataset size, we need to choose a small amount of support in order to extract interesting associations of problems that 
 does not appear often in the dataset. However, we are keeping the Confidence level high in order to make sure that the association is less likely to appear by chance, but they co-occur together pretty often. Therefore,
 min_sup = 0.003 and min_conf = 0.15 is chosen for that reason.
+
+### External Libraries
+
+The external libraries used in this repository are as follows:
+
+- Pandas : Dataframe transformation library
+- Numpy: Vectorized array manipulation library
+- tqdm : Progress bar library
+- loguru: Logging library
+- fire: Command Line Interface library
