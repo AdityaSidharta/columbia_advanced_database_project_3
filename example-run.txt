@@ -1,3 +1,7 @@
+```
+bash run.sh INTEGRATED-DATASET.csv 0.003 0.15 >> example-run.txt
+```
+
 ==Frequent itemsets (min_sup=0.3%)
 [ENTIRE BUILDING (NO HEAT)], 22.3%
 [APARTMENT ONLY (NO HEAT)], 13.1%
